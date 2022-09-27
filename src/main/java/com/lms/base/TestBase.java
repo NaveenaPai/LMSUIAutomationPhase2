@@ -36,14 +36,14 @@ public class TestBase {
 			driverPath = System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver.exe";
 			System.setProperty("webdriver.chrome.driver", driverPath);
 			ChromeOptions options=new ChromeOptions();
-			options.setHeadless(true);
+			//options.setHeadless(true);
 			driver = new ChromeDriver(options);
 			break;
 		case "edge":
 			driverPath = System.getProperty("user.dir") + "/src/main/resources/drivers/msedgedriver.exe";
 			System.setProperty("webdriver.edge.driver", driverPath);
 			EdgeOptions edgeOptions=new EdgeOptions();
-			edgeOptions.setHeadless(true);
+			//edgeOptions.setHeadless(true);
 			driver = new EdgeDriver(edgeOptions);
 			break;
 		default:
